@@ -23,7 +23,7 @@ def main():
 
     # Display all questions
     for question in questions:
-        responses[question] = st.radio(question, ("Yes", "No"), key=question)
+        responses[question] = st.radio(question, ("Yes", "No"), key=question, index = 1)
 
     # Submit button
     if st.button('Submit'):
