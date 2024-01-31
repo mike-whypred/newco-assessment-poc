@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 
 def run_questionnaire():
-    st.title("✅Dental Risk Assessment🦷")
+    st.title("✅Dental Lifestyle Assessment🦷")
     st.caption("A questionnaire on your oral health")
 
     # Load the data with the correct encoding
