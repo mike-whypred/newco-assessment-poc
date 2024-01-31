@@ -1,0 +1,47 @@
+q_no,question,yes_score,no_score,comments
+1,"Do you think you drink enough water, maintain a healthy level of hydration taking into account your general health and lifestyle needs? For males drinking about 2.6 L per day,  For females 2.2 L per day, add another cup a day if you're pregnant or breastfeeding, children need about 4 to 5 cups of fluids a day, teenagers need 6 to 8 cups of fluids a day In Australia, 1 cup is about 250mL.
+",1,0,"How much you need to drink is influenced by: what you eat, your age, what the temperature is, whether you have Here’s the general rules regarding advice on staying adequately hydrated from https://www.healthdirect.gov.au/drinking-water-and-your-health#how-much, for males drinking about 2.6 L per day,  for females 2.2 L per day, add another cup a day if you're pregnant or breastfeeding, children need about 4 to 5 cups of fluids a day, teenagers need 6 to 8 cups of fluids a day In Australia, 1 cup is about 250mL. a medical condition, how your metabolism works, if you are exercising or working outdoors. 
+How does your hydration levels match the ideal? "
+2,"Is your diet low in sugar/refined carbohydrates (total less than 8 tsps /day), and low frequency allowing a least 2-3 hours between snacks",1,0,modifying your diet is one way to help your mouth.
+3,"Is your diet low in acid, total amount and frequency, allowing a least 2-3 hours between acid challenges",1,0,modifying your diet is one way to help your mouth.
+4,"Is your diet rich in micro/macronutrients, high in fibre, and essential amino acids
+eg Lots of Green leafy vegetables, pulses, legumes and lean meat and fish ",1,0,modifying your diet is one way to help your mouth.
+5,Do you smoke or vape ? ,0,2,smoking/vaping affects your mouth in many ways all of which negatively impact your oral health. It is best for your health to seek help to quit.
+6,Do you get the chance to a Brush twice a day with fluoridated toothpaste,1,0,doing XYZ is one way to help your mouth
+7,Do you Floss your teeth,1,0,doing XYZ is one way to help your mouth
+8,Do you drink water that is fluoridated,1,0,doing XYZ is one way to help your mouth
+9,Visit the dentist for regular preventive dental care,1,0,doing XYZ is one way to help your mouth
+10,Have you had any teeth extracted that you know of?,1,0,even if some of these can’t be changed there are ways to help your mouth and doing XYZ is one way to help your mouth. 
+11,Do you have fillings in your teeth that you know of?,1,0,even if some of these can’t be changed there are ways to help your mouth and doing XYZ is one way to help your mouth. 
+12,Do you have any teeth crowned that you know of? ,1,0,even if some of these can’t be changed there are ways to help your mouth and doing XYZ is one way to help your mouth. 
+13,Have any of your teeth had nerve treatment that you know of ? ,1,0,even if some of these can’t be changed there are ways to help your mouth and doing XYZ is one way to help your mouth. 
+14,Do your teeth fit together to bite efficiently?,1,0,even if some of these can’t be changed there are ways to help your mouth and doing XYZ is one way to help your mouth. 
+15,Can you see any decay in your teeth ?,1,0,even if some of these can’t be changed there are ways to help your mouth and doing XYZ is one way to help your mouth. 
+16,"Have you had any teeth extracted due to decay in the past 3 years,",0,1,even if some of these can’t be changed there are ways to help your mouth and doing XYZ is one way to help your mouth. 
+17,Can you see plaque on your teeth?,0,1,even if some of these can’t be changed there are ways to help your mouth and doing XYZ is one way to help your mouth. 
+18,Do you have fillings that involve the in between surfaces of your teeth?,0,1,even if some of these can’t be changed there are ways to help your mouth and doing XYZ is one way to help your mouth. 
+19,When you look at your teeth have the gums moved down the teeth in any spots ?,0,1,even if some of these can’t be changed there are ways to help your mouth and doing XYZ is one way to help your mouth. 
+20,Is there are spot where food gets stuck between your teeth regularly?,0,1,even if some of these can’t be changed there are ways to help your mouth and doing XYZ is one way to help your mouth. 
+21,Are any of your fillings/teeth obviously rough ?,0,1,even if some of these can’t be changed there are ways to help your mouth and doing XYZ is one way to help your mouth. 
+22,"Do you have any dental/Orthodontic Appliances (fixed or removable, like retainers or dentures)",0,1,even if some of these can’t be changed there are ways to help your mouth and doing XYZ is one way to help your mouth. 
+23,Does your mouth feel very dry ( a condition called xerostomia) ?,0,1,even if some of these can’t be changed there are ways to help your mouth and doing XYZ is one way to help your mouth. 
+24, Have you had any teeth filled/treated due to decay in the past 3 years? ,0,1,even if some of these can’t be changed there are ways to help your mouth and doing XYZ is one way to help your mouth. 
+25,Do you think you may have a problem with your teeth eroding  ,0,1,"Here are some foods and drinks associated with dental erosion, Carbonated or fizzy drinks excluding ordinary unflavoured sparkling water, Pure fruit juice, smoothies and cordials , Certain alcoholic drinks (eg cider, white wine), Herbal teas, Fruits (especially citrus, grapes, sour apples), Sauces (eg ketchup, brown sauce), Snack foods (eg salt and vinegar crisps), Vinegar and pickled foods.  "
+26,Do you worry about the acid levels in your mouth over time?,0,1,"Here’s are some habits that support a healthy neutral level of acid inside your mouth,  Limiting acidic foods and drinks to mealtimes and avoiding, acidic intake at bedtime and during the night. Avoiding habits that extend the length of time of contact between the dietary acid and tooth surface (eg grazing on fruit, sipping/swishing/holding of acidic beverages). Avoid hot acidic beverages or wait for these to cool before drinking. Drinking enough water. Chewing sugar free gum after an acid exposure. Finishing a meal or following an acid exposure with cheese or milk will neutralise intraoral acid. Avoiding mechanical toothbrushing immediately after exposure to acid, and instead rinsing with water. 
+Source: https://www.rcseng.ac.uk/dental-faculties/fds/publications-guidelines/clinical-guidelines/"
+27,Do you feel like you manage your stress well?,1,0,supporting your well-being is one way to help your mouth.
+28,Do you feel like you manage your physical fitness well?,1,0,supporting your well-being is one way to help your mouth.
+29,Do you feel good about your general wellbeing and take care of yourself?,1,0,supporting your well-being is one way to help your mouth.
+30,Do you suffer from any condition that might lead to changes in your blood sugar regulation,0,1," My general health conditions most likely affect my oral health 
+then we need to say doing XYZ is one way to help your mouth "
+31,"Do you suffer from any condition that might lead to changes in your blood insulin levels, lipid levels or your BMI not being in a healthy range?",0,1," My general health conditions most likely affect my oral health 
+then we need to say doing XYZ is one way to help your mouth "
+32,Do you suffer from any condition that might lead to changes in your healthy healing,0,1," My general health conditions most likely affect my oral health 
+then we need to say doing XYZ is one way to help your mouth "
+33,Do you suffer from any condition that might lead to changes in your hormonal health,0,1," My general health conditions most likely affect my oral health 
+then we need to say doing XYZ is one way to help your mouth "
+34,Do you suffer from any condition that might lead to changes in your salivary gland health,0,1," My general health conditions most likely affect my oral health 
+then we need to say doing XYZ is one way to help your mouth "
+35,Do you suffer from any condition that might lead to changes in your gastrointestinal system health,0,1," My general health conditions most likely affect my oral health 
+then we need to say doing XYZ is one way to help your mouth "
+36,Are there aspects of your life make it harder to look after your oral health,0,1,XYZ is one way to help your mouth

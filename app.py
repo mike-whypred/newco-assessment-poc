@@ -1,54 +1,52 @@
 import streamlit as st
+import pandas as pd
 
-def main():
-    # Questions list
-    st.title("✅Dental Health Check Tool🦷")
-    st.caption("A quick questionnaire to check your oral health")
+def run_questionnaire():
+    st.title("✅Dental Risk Assessment🦷")
+    st.caption("A questionnaire on your oral health")
 
-    questions = [
-        "Have you experienced tooth sensitivity to hot, cold, or sweet foods and drinks recently?",
-        "Do your gums bleed when you brush or floss your teeth?",
-        "Do you often suffer from a dry mouth, even if you are well-hydrated?",
-        "Have you had any toothaches or persistent tooth pain in the past six months?",
-        "Are your gums swollen, red, or tender?",
-        "Do you frequently suffer from bad breath, regardless of oral hygiene practices?",
-        "Have any of your teeth become loose without any apparent injury?",
-        "Do you experience difficulty or discomfort when chewing food?",
-        "Have you had a new cavity or required a dental filling in the last two years?",
-        "Do you use tobacco products, including smoking or chewing tobacco?"
-    ]
+    # Load the data with the correct encoding
+    data = pd.read_csv('data.csv', encoding='ISO-8859-1')  # Replace with the correct path
 
-    # Initialize a dictionary to store responses
-    responses = {q: False for q in questions}
+    # Initialize total score and recommendations string
+    total_score = 0
+    recommendations = ""
 
-    # Display all questions
-    for question in questions:
-        responses[question] = st.radio(question, ("Yes", "No"), key=question, index = 1)
+    # Create a form for the questionnaire
+    with st.form(key='questionnaire_form'):
+        # Iterate through each question
+        for index, row in data.iterrows():
+            question = row['question']
+            yes_score = row['yes_score']
+            no_score = row['no_score']
+            comment = row['comments']
+            qn = row['q_no']
 
-    # Submit button
-    if st.button('Submit'):
-        # Count 'Yes' responses
-        counter = sum(1 for response in responses.values() if response == "Yes")
-        # Determine risk category
-        if counter > 7:
-            st.error("You are in the High Risk category.")
-        elif counter > 2:
-            st.warning("You are in the Medium Risk category.")
-        else:
-            st.success("You are in the Low Risk category.")
+            # Display the question with a unique key for each radio button
+            answer = st.radio(f'Q{qn}. {question}', ('Yes', 'No'), key=f'question_{index}')
 
-        dentist_url = "https://portal.ada.org.au/Portal/Shared_Content/Smart-Suite/Smart-Maps/Public/Find-a-Dentist.aspx"
-        if st.button("Talk to a Dentist!"):
-            st.write('You are being directed to the Find A Dentist Portal!👩')
-            js = f"window.open('{dentist_url}')"  # JavaScript to open a new window/tab
-            st.components.v1.html(f"<script>{js}</script>", height=0)
+            # Store the score and recommendation for processing after submission
+            if answer == 'Yes':
+                if yes_score == 0:
+                    recommendations += f"Your answer to question {index + 1} was 'Yes'. To improve your oral health, it is recommended {comment}\n\n"
+            else:
+                if no_score == 0:
+                    recommendations += f"Your answer to question {index + 1} was 'No'. To improve your oral health, it is recommended {comment}\n\n"
 
-# Run the app
+        # Submit button at the end of the questionnaire
+        submitted = st.form_submit_button("Submit")
+
+    # Process and display the results after submission
+    if submitted:
+        # Calculate the total score
+        for index, row in data.iterrows():
+            answer = st.session_state[f'question_{index}']
+            total_score += row['yes_score'] if answer == 'Yes' else row['no_score']
+
+        # Display the total score and recommendations
+        st.write("Your total score is:", total_score)
+        with st.expander("Recommendations"):
+            st.write(recommendations)
+
 if __name__ == "__main__":
-    main()
-
-
-
-# Button to talk to a dentist
-    
-
+    run_questionnaire()
