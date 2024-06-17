@@ -11,8 +11,6 @@ This repository contains a Streamlit app that can be run locally. Streamlit is a
 - [Running the App](#running-the-app)
 - [File Structure](#file-structure)
 - [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Prerequisites
 
